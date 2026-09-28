@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+
+
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff4b91;
+}
+
+
+
+
+.projects {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.projects h1 span {
+    color: #ff4b91;
+}
+
+.intro {
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+
+
+.project-card {
+    background-color: #1d1d1d;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.project-card:hover {
+    border-color: #ff4b91;
+    transform: translateY(-5px);
+}
+
+
+
+
+.project-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h2 {
+    color: #ff4b91;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+
+.technology {
+    margin-bottom: 20px;
+}
+
+.technology span {
+    display: inline-block;
+    background-color: #333333;
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4b91;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff2275;
+}
+
+
+
+@media (max-width: 850px) {
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+}

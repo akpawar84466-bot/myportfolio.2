@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+
+
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff4b91;
+}
+
+
+/* Skills Section */
+
+.skills {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.skills h1 span {
+    color: #ff4b91;
+}
+
+.intro {
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+
+/* Cards */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #1d1d1d;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #333333;
+}
+
+.skill-card:hover {
+    border-color: #ff4b91;
+    transform: translateY(-5px);
+}
+
+.skill-card h2 {
+    color: #ff4b91;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Progress Bar */
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background-color: #ff4b91;
+}
+
+
+.skill-card span {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    color: #ff4b91;
+}
+
+
+
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.javascript {
+    width: 70%;
+}
+
+.python {
+    width: 75%;
+}
+
+.bootstrap {
+    width: 70%;
+}
+
+.mysql {
+    width: 65%;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+}
